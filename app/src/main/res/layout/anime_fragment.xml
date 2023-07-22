@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.DetailFragment">
+    tools:context=".ui.fragments.AnimeFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -14,6 +14,5 @@
         app:spanCount="3"
         tools:itemCount="15"
         tools:listitem="@layout/item_recycler_view" />
-
 
 </FrameLayout>
