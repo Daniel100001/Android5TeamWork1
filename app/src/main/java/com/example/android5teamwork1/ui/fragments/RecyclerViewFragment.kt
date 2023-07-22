@@ -5,13 +5,17 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.example.android5teamwork1.data.model.Anime
 import com.example.android5teamwork1.databinding.ItemRecyclerViewBinding
 
 class RecyclerViewFragment :
-    ListAdapter<Model, RecyclerViewFragment.RecyclerViewHolder>(DiffUtilCallback()) {
+    ListAdapter<Anime, RecyclerViewFragment.RecyclerViewHolder>(DiffUtilCallback()) {
 
     inner class RecyclerViewHolder(private val binding: ItemRecyclerViewBinding) :
         RecyclerView.ViewHolder(binding.root) {
+        fun onBind(item: Anime?) {
+
+        }
 
     }
 
@@ -30,13 +34,13 @@ class RecyclerViewFragment :
     }
 
     companion object {
-        class DiffUtilCallback : DiffUtil.ItemCallback<Model>() {
+        class DiffUtilCallback : DiffUtil.ItemCallback<Anime>() {
 
-            override fun areItemsTheSame(oldItem: Model, newItem: MOdel): Boolean {
+            override fun areItemsTheSame(oldItem: Anime, newItem: Anime): Boolean {
                 return oldItem.id == newItem.id
             }
 
-            override fun areContentsTheSame(oldItem: Model, newItem: MOdel): Boolean {
+            override fun areContentsTheSame(oldItem: Anime, newItem: Anime): Boolean {
                 return oldItem == newItem
             }
         }
