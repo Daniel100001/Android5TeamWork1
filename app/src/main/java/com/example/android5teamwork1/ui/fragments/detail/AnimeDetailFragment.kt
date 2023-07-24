@@ -1,4 +1,4 @@
-package com.example.android5teamwork1.ui.fragments
+package com.example.android5teamwork1.ui.fragments.detail
 
 import android.os.Bundle
 import android.view.View
@@ -9,6 +9,7 @@ import com.bumptech.glide.Glide
 import com.example.android5teamwork1.R
 import com.example.android5teamwork1.base.BaseFragment
 import com.example.android5teamwork1.databinding.FragmentAnimeDetailFragmnetBinding
+import com.example.android5teamwork1.ui.fragments.home.AnimeViewModel
 
 class AnimeDetailFragment :
     BaseFragment<FragmentAnimeDetailFragmnetBinding, AnimeViewModel>(R.layout.anime_fragment) {
