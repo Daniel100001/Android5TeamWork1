@@ -1,6 +1,9 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+
+    // safeargs
+    id("androidx.navigation.safeargs")
 }
 
 android {
@@ -50,6 +53,12 @@ dependencies {
     // Binding property delegate
     def view_binding_property_delegate = "1.5.8"
     implementation ("com.github.kirich1409:viewbindingpropertydelegate:$view_binding_property_delegate")
+
+    // nav_graph
+    def navVersion = "2.6.0"
+
+    implementation ("androidx.navigation:navigation-fragment-ktx:$navVersion")
+    implementation ("androidx.navigation:navigation-ui-ktx:$navVersion")
 
     // Glide
     implementation 'com.github.bumptech.glide:glide:4.15.1'
