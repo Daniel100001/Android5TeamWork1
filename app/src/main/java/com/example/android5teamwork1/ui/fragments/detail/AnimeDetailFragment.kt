@@ -12,7 +12,7 @@ import com.example.android5teamwork1.databinding.FragmentAnimeDetailFragmnetBind
 import com.example.android5teamwork1.ui.fragments.home.AnimeViewModel
 
 class AnimeDetailFragment :
-    BaseFragment<FragmentAnimeDetailFragmnetBinding, AnimeViewModel>(R.layout.anime_fragment) {
+    BaseFragment<FragmentAnimeDetailFragmnetBinding, AnimeViewModel>(R.layout.fragment_anime_detail_fragmnet) {
     override val binding by viewBinding(FragmentAnimeDetailFragmnetBinding::bind)
     override val viewModel: AnimeViewModel by viewModels()
 
