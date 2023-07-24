@@ -30,4 +30,10 @@ class AnimeFragment :
         }
     }
 
+    override fun setupListeners() {
+        binding.btnAddItem.setOnClickListener {
+            findNavController().navigate(R.id.action_animeFragment_to_addFragment2)
+        }
+    }
+
 }
