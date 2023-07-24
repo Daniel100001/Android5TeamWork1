@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/animeFragment"
-        android:name="com.example.android5teamwork1.ui.fragments.AnimeFragment"
+        android:name="com.example.android5teamwork1.ui.fragments.home.AnimeFragment"
         android:label="anime_fragment"
         tools:layout="@layout/anime_fragment" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/animeDetailFragment"
-        android:name="com.example.android5teamwork1.ui.fragments.AnimeDetailFragment"
+        android:name="com.example.android5teamwork1.ui.fragments.detail.AnimeDetailFragment"
         android:label="fragment_anime_detail_fragmnet"
         tools:layout="@layout/fragment_anime_detail_fragmnet" >
 

@@ -1,4 +1,4 @@
-package com.example.android5teamwork1.ui.fragments
+package com.example.android5teamwork1.ui.fragments.home
 
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
