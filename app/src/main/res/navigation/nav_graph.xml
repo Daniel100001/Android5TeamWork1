@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/animeFragment">
+
+    <fragment
+        android:id="@+id/animeFragment"
+        android:name="com.example.android5teamwork1.ui.fragments.home.AnimeFragment"
+        android:label="anime_fragment"
+        tools:layout="@layout/anime_fragment" >
+        <action
+            android:id="@+id/action_animeFragment_to_animeDetailFragment"
+            app:destination="@id/animeDetailFragment" />
+        <action
+            android:id="@+id/action_animeFragment_to_addFragment2"
+            app:destination="@id/addFragment2"
+            app:popUpToSaveState="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/animeDetailFragment"
+        android:name="com.example.android5teamwork1.ui.fragments.detail.AnimeDetailFragment"
+        android:label="fragment_anime_detail_fragmnet"
+        tools:layout="@layout/fragment_anime_detail_fragmnet" >
+
+        <argument
+            android:name="model"
+            app:argType="com.example.android5teamwork1.data.model.AnimeModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment2"
+        android:name="com.example.android5teamwork1.ui.fragments.add.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" />
+</navigation>
